@@ -15,6 +15,15 @@ p {
   font-size: 14px;
   color: #111;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  line-height: 2;
+}
+
+main {
+  background-color: #f4f4f3;
+}
+
+.main-section-title {
+  padding-top: 57px;
 }
 
 header {
@@ -56,11 +65,105 @@ header .scroll-button img {
   height: 26px;
 }
 
-.make-next-area .make-next-detail .make-next-detail-title {
+.concept-area {
+  padding-top: 79px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.concept-area .section-title-area {
+  margin-right: 280px;
+}
+
+.concept-area .section-title-area .section-subtitle {
+  font-size: 13px;
+  margin-top: 50px;
+}
+
+.concept-area .concept-detail .concept-detail-title {
   font-size: 24px;
   font-weight: bold;
 }
 
-.make-next-area .make-next-detail .make-next-detail-text {
+.concept-area .concept-detail .concept-detail-text {
   font-size: 15px;
+  margin: 30px 0 75px;
+}
+
+.pre-registration-area {
+  color: #fff;
+  background-color: #111;
+  text-align: center;
+}
+
+.pre-registration-area .open {
+  padding-top: 73px;
+}
+
+.pre-registration-area p {
+  display: block;
+  color: #ffffff;
+  margin: 28px 0 30px;
+  font-weight: bold;
+}
+
+.pre-registration-area .pre-registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 78px;
+}
+
+.pre-registration-area .pre-registration-form input[type=email] {
+  width: 930px;
+  padding: 23px 0;
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  border-style: none;
+}
+
+.pre-registration-area .pre-registration-form input[type=submit] {
+  width: 270px;
+  padding: 23px 0;
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #b34f36;
+  border-style: none;
+}
+
+.news-area .news-list {
+  background-color: #fff;
+  margin-top: 61px;
+}
+
+.news-area .news-list .news-item {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.news-area .news-list .news-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 40px 58px;
+  text-decoration: none;
+}
+
+.news-area .news-list .news-item .news-img {
+  margin-right: 50px;
+}
+
+.news-area .news-list .news-item .news-detail .news-time {
+  display: block;
+  color: #bf8f30;
+  font-size: 11px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.news-area .news-list .news-item:last-child {
+  border-bottom: none;
 }

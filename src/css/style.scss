@@ -2,7 +2,7 @@ $mainColor: #111;
 $backgroundColor: #f4f4f3;
 $subColor: #bf8f30;
 // $textColor: ;
-// $webFont: ;
+$Font: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 
 // 全体設定
 *{
@@ -19,8 +19,18 @@ $subColor: #bf8f30;
 p{
     font-size: 14px;
     color: $mainColor;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: $Font;
+    line-height: 2;
 }
+
+main{
+    background-color: $backgroundColor;
+}
+
+.main-section-title{
+    padding-top: 57px;
+}
+
 // ヘッダー
 header{
     background-image: url(../img/movie_pc.png);
@@ -61,26 +71,123 @@ header{
     }
 }
 
-// Make next
-.make-next-area{
-    .make-next-detail{
-        .make-next-detail-title{
+// コンセプト
+.concept-area{
+    padding-top: 79px;
+    width: 100%;
+    display: flex;
+
+    .section-title-area{
+        margin-right: 280px;
+
+        .section-subtitle{
+            font-size: 13px;
+            margin-top: 50px;
+        }
+    }
+
+    .concept-detail{
+        .concept-detail-title{
             font-size: 24px;
             font-weight: bold;
         }
 
-        .make-next-detail-text{
+        .concept-detail-text{
             font-size: 15px;
+            margin: 30px 0 75px;
         }
     }
 }
 
 // 事前登録
+.pre-registration-area{
+    color: #fff;
+    background-color: $mainColor;
+    text-align: center;
+
+    .open{
+        padding-top: 73px;
+    }
+
+    p{
+        display: block;
+        color: #ffffff;
+        margin: 28px 0 30px;
+        font-weight: bold;
+    }
+
+    .pre-registration-form{
+        display: flex;
+        padding-bottom: 78px;
+
+        input[type=email]{
+            width: 930px;
+            padding: 23px 0;
+            font-size: 16px;
+            font-family: $Font;
+            border-style: none;
+        }
+
+        input[type=submit]{
+            width: 270px;
+            padding: 23px 0;
+            font-size: 16px;
+            font-family: $Font;
+            background-color: #b34f36;
+            border-style: none;
+        }
+    }
+}
 
 // メイン
 // NEWS
+.news-area{
+    .news-list{
+        background-color: #fff;
+        margin-top: 61px;
+
+        .news-item{
+            border-bottom: 1px solid #f4f4f4;
+
+            & a{
+                display: flex;
+                width: 100%;
+                padding: 40px 58px;
+                text-decoration: none;
+            }
+
+            .news-img{
+                margin-right: 50px;
+            }
+
+            .news-detail{
+                .news-time{
+                    display: block;
+                    color: $subColor;
+                    font-size: 11px;
+                    font-family: $Font;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                .news-text{
+                    
+                }
+
+            }
+
+
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
 
 // PLATFORM
+.platform-area{
+    
+}
 
 // BAUS TEAM
 
