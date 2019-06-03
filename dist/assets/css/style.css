@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 14px;
+  color: #111;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+header {
+  background-image: url(../img/movie_pc.png);
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+
+header .logo {
+  margin: 0 auto 45px;
+  padding-top: 245px;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 152px;
+}
+
+header .play-movie-button {
+  background-color: #111;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  width: 270px;
+  padding: 24px 0px;
+  margin: 0 auto 35px;
+}
+
+header .scroll-button {
+  display: block;
+  width: 50px;
+  margin: 0 auto 20px;
+}
+
+header .scroll-button img {
+  width: 50px;
+  height: 26px;
+}
+
+.make-next-area .make-next-detail .make-next-detail-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.make-next-area .make-next-detail .make-next-detail-text {
+  font-size: 15px;
+}

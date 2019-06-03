@@ -1,0 +1,89 @@
+$mainColor: #111;
+$backgroundColor: #f4f4f3;
+$subColor: #bf8f30;
+// $textColor: ;
+// $webFont: ;
+
+// 全体設定
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 14px;
+    color: $mainColor;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+// ヘッダー
+header{
+    background-image: url(../img/movie_pc.png);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+
+    .logo{
+        margin: 0 auto 45px;
+        padding-top: 245px;
+    }
+
+    p{
+        font-weight: 700;
+        font-size: 21px;
+        margin-bottom: 152px;
+    }
+
+    .play-movie-button{
+        background-color: $mainColor;
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        width: 270px;
+        padding: 24px 0px;
+        margin: 0 auto 35px;
+    }
+
+    .scroll-button{
+        display: block;
+        width: 50px;
+        margin: 0 auto 20px;
+
+        img{
+            width: 50px;
+            height: 26px;
+        }
+    }
+}
+
+// Make next
+.make-next-area{
+    .make-next-detail{
+        .make-next-detail-title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .make-next-detail-text{
+            font-size: 15px;
+        }
+    }
+}
+
+// 事前登録
+
+// メイン
+// NEWS
+
+// PLATFORM
+
+// BAUS TEAM
+
+// OFFICIAL PARTNER
+
+// フッター
