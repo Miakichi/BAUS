@@ -23,27 +23,40 @@ p{
     line-height: 2;
 }
 
+span{
+    font-family: $Font;
+}
+
 main{
     background-color: $backgroundColor;
 }
 
-.main-section-title{
-    padding-top: 57px;
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+
+    &-subtitle{
+        font-size: 18px;
+        color: $subColor;
+        font-weight: bold;
+    }
 }
 
 // ヘッダー
-header{
+.grobal-header{
     background-image: url(../img/movie_pc.png);
     background-size: cover;
     width: 100%;
     text-align: center;
+    padding-bottom: 17px;
 
     .logo{
         margin: 0 auto 45px;
         padding-top: 245px;
     }
 
-    p{
+    .header-text{
         font-weight: 700;
         font-size: 21px;
         margin-bottom: 152px;
@@ -109,7 +122,7 @@ header{
         padding-top: 73px;
     }
 
-    p{
+    .pre-registration-text{
         display: block;
         color: #ffffff;
         margin: 28px 0 30px;
@@ -122,7 +135,7 @@ header{
 
         input[type=email]{
             width: 930px;
-            padding: 23px 0;
+            padding: 23px 29px;
             font-size: 16px;
             font-family: $Font;
             border-style: none;
@@ -142,6 +155,9 @@ header{
 // メイン
 // NEWS
 .news-area{
+    padding-top: 50px;
+    margin-bottom: 84px;
+
     .news-list{
         background-color: #fff;
         margin-top: 61px;
@@ -149,8 +165,9 @@ header{
         .news-item{
             border-bottom: 1px solid #f4f4f4;
 
-            & a{
+            a{
                 display: flex;
+                align-items: center;
                 width: 100%;
                 padding: 40px 58px;
                 text-decoration: none;
@@ -186,11 +203,188 @@ header{
 
 // PLATFORM
 .platform-area{
+    margin-bottom: 80px;
+
+    .platform-text{
+        margin: 59px 0 39px;
+        font-size: 15px;
+    }
+
+    .platform-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-type{
+        width: 270px;
+        background-color: #ffffff;
+        
+        &-list{
+            text-align: center;
+            padding: 97px 0 91px;
+        }
+
+        &-item{
+            margin-bottom: 51px;
+
+            &-title{
+                margin: 0 0 41px;
+                font-weight: bold;
+                color: $subColor;
+            }
+
+            &-caption{
+                font-size: 11px;
+                font-family: $Font;
+                margin-top: 12px;
+            }
+
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .opportunity-area{
+        width: 890px;
+        background-color: #ffffff;
+
+        .opportunity{
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ededed;
+
+            &-title-wrapper{
+                width: 383px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+
+            &-subtitle{
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & figcaption{
+                    font-size: 11px;
+                    font-family: $Font;
+                    font-weight: bold;
+                }
+            }
+
+            &-text{
+                display: block;
+                padding: 14px 0;
+                text-align: center;
+                background-color: #ededed;
+                font-size: 12px;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    left: 30px;
+                    margin-left: -15px;
+                    border: 15px solid transparent;
+                    border-bottom: 15px solid #ededed;
+                }
+            }
+
+            &-detail{
+                margin-left: 18px;
+
+                &-title{
+                    font-weight: bold;
+                    color: $subColor;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &:last-child{
+                border:  none;
+            }
+        }
+    }
+
+    .platform-button{
+        display: block;
+        width: 560px;
+        background-color: $mainColor;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        padding: 23px 0;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: $Font;
+        margin: 40px auto 0;
+
+        // img{
+        //     display: block;
+        //     text-align: left;
+        // }
+    }
     
 }
 
 // BAUS TEAM
+.baus-team-area{
+    margin-bottom: 80px;
+
+    .baus-team-text{
+        margin: 59px 0 41px;
+        font-size: 15px;
+    }
+
+    .baus-team-list{
+        .baus-team-item{
+            background-color: #fff;
+            margin-bottom: 40px;
+            padding: 40px;
+            display: flex;
+
+            &-img{
+                margin-right: 40px;
+
+                img{
+                    width: 230px;
+                }
+            }
+
+            &-name{
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            &-title{
+                font-size: 11px;
+                color: $subColor;
+            }
+        }
+    }
+}
 
 // OFFICIAL PARTNER
 
+.official-partner-area{
+    padding-bottom: 48px;
+
+    .partner-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+}
+
 // フッター
+.footer{
+    background-color: $mainColor;
+    padding: 83px 0 45px;
+    text-align: right;
+}

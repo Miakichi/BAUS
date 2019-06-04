@@ -18,33 +18,50 @@ p {
   line-height: 2;
 }
 
+span {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
 main {
   background-color: #f4f4f3;
 }
 
-.main-section-title {
-  padding-top: 57px;
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 57px;
 }
 
-header {
+.main-header-subtitle {
+  font-size: 18px;
+  color: #bf8f30;
+  font-weight: bold;
+}
+
+.grobal-header {
   background-image: url(../img/movie_pc.png);
   background-size: cover;
   width: 100%;
   text-align: center;
+  padding-bottom: 17px;
 }
 
-header .logo {
+.grobal-header .logo {
   margin: 0 auto 45px;
   padding-top: 245px;
 }
 
-header p {
+.grobal-header .header-text {
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 152px;
 }
 
-header .play-movie-button {
+.grobal-header .play-movie-button {
   background-color: #111;
   color: #ffffff;
   text-decoration: none;
@@ -54,13 +71,13 @@ header .play-movie-button {
   margin: 0 auto 35px;
 }
 
-header .scroll-button {
+.grobal-header .scroll-button {
   display: block;
   width: 50px;
   margin: 0 auto 20px;
 }
 
-header .scroll-button img {
+.grobal-header .scroll-button img {
   width: 50px;
   height: 26px;
 }
@@ -102,7 +119,7 @@ header .scroll-button img {
   padding-top: 73px;
 }
 
-.pre-registration-area p {
+.pre-registration-area .pre-registration-text {
   display: block;
   color: #ffffff;
   margin: 28px 0 30px;
@@ -118,7 +135,7 @@ header .scroll-button img {
 
 .pre-registration-area .pre-registration-form input[type=email] {
   width: 930px;
-  padding: 23px 0;
+  padding: 23px 29px;
   font-size: 16px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   border-style: none;
@@ -131,6 +148,11 @@ header .scroll-button img {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   background-color: #b34f36;
   border-style: none;
+}
+
+.news-area {
+  padding-top: 50px;
+  margin-bottom: 84px;
 }
 
 .news-area .news-list {
@@ -146,6 +168,9 @@ header .scroll-button img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 40px 58px;
   text-decoration: none;
@@ -166,4 +191,205 @@ header .scroll-button img {
 
 .news-area .news-list .news-item:last-child {
   border-bottom: none;
+}
+
+.platform-area {
+  margin-bottom: 80px;
+}
+
+.platform-area .platform-text {
+  margin: 59px 0 39px;
+  font-size: 15px;
+}
+
+.platform-area .platform-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.platform-area .user-type {
+  width: 270px;
+  background-color: #ffffff;
+}
+
+.platform-area .user-type-list {
+  text-align: center;
+  padding: 97px 0 91px;
+}
+
+.platform-area .user-type-item {
+  margin-bottom: 51px;
+}
+
+.platform-area .user-type-item-title {
+  margin: 0 0 41px;
+  font-weight: bold;
+  color: #bf8f30;
+}
+
+.platform-area .user-type-item-caption {
+  font-size: 11px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  margin-top: 12px;
+}
+
+.platform-area .user-type-item:last-child {
+  margin-bottom: 0px;
+}
+
+.platform-area .opportunity-area {
+  width: 890px;
+  background-color: #ffffff;
+}
+
+.platform-area .opportunity-area .opportunity {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+}
+
+.platform-area .opportunity-area .opportunity-title-wrapper {
+  width: 383px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.platform-area .opportunity-area .opportunity-subtitle {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.platform-area .opportunity-area .opportunity-subtitle figcaption {
+  font-size: 11px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+}
+
+.platform-area .opportunity-area .opportunity-text {
+  display: block;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #ededed;
+  font-size: 12px;
+  position: relative;
+}
+
+.platform-area .opportunity-area .opportunity-text::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #ededed;
+}
+
+.platform-area .opportunity-area .opportunity-detail {
+  margin-left: 18px;
+}
+
+.platform-area .opportunity-area .opportunity-detail-title {
+  font-weight: bold;
+  color: #bf8f30;
+  margin-bottom: 20px;
+}
+
+.platform-area .opportunity-area .opportunity:last-child {
+  border: none;
+}
+
+.platform-area .platform-button {
+  display: block;
+  width: 560px;
+  background-color: #111;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 23px 0;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  margin: 40px auto 0;
+}
+
+.baus-team-area {
+  margin-bottom: 80px;
+}
+
+.baus-team-area .baus-team-text {
+  margin: 59px 0 41px;
+  font-size: 15px;
+}
+
+.baus-team-area .baus-team-list .baus-team-item {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.baus-team-area .baus-team-list .baus-team-item-img {
+  margin-right: 40px;
+}
+
+.baus-team-area .baus-team-list .baus-team-item-img img {
+  width: 230px;
+}
+
+.baus-team-area .baus-team-list .baus-team-item-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.baus-team-area .baus-team-list .baus-team-item-title {
+  font-size: 11px;
+  color: #bf8f30;
+}
+
+.official-partner-area {
+  padding-bottom: 48px;
+}
+
+.official-partner-area .partner-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.footer {
+  background-color: #111;
+  padding: 83px 0 45px;
+  text-align: right;
 }

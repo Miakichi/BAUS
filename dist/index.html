@@ -12,12 +12,12 @@
 <body>
 
     <!-- ヘッダー -->
-    <header>
+    <header class="grobal-header">
         <h1 class="logo">
-            <img src="assets/img/logo.svg" alt="ロゴ">
+            <img src="assets/img/logo.svg" alt="BAUSロゴ">
         </h1>
         <p class="header-text">｢次｣と｢続き｣が生まれるクリエイティブプラットフォーム</p>
-        <a class="play-movie-button" href="">PLAY MOVIE</a>
+        <a class="play-movie-button" href="#">PLAY MOVIE</a>
         <a class="scroll-button" href="#"><img src="assets/img/scroll.png" alt="スクロールボタン"></a>
     </header>
 
@@ -26,7 +26,7 @@
     <!-- コンセプト -->
     <section class="concept-area">
             <div class="section-title-area">
-            <h2 class="section-title"><img src="assets/img/title_concept.png" alt=""></h2>
+            <h2 class="section-title"><img src="assets/img/title_concept.png" alt="Make next"></h2>
             <p class="section-subtitle">｢次｣と｢続き｣が生まれる<br>
                 クリエイティブプラットフォーム</p>
             </div>
@@ -46,7 +46,7 @@
         <div class="wrapper">
             <p class="open"><img src="assets/img/OPEN.png" alt=""></p>
             <p class="pre-registration-text">メールアドレスをご登録いただいた方に、BAUS（バウス）に関する情報をいち早くお届けします。</p>
-            <form class="pre-registration-form" action="" method="">
+            <form class="pre-registration-form" action="#" method="POST">
                 <input type="email" id="mail" name="user_mail" placeholder="メールアドレスを入力してください">
                 <input type="submit" value="事前登録">
             </form>
@@ -57,8 +57,12 @@
         <!-- NEWS -->
         <section class="news-area">
             <div class="wrapper">
-            <h2 class="main-section-title"><img src="assets/img/NEWS.png" alt=""></h2>
-            <span class="main-section-subtitle">お知らせ</span>
+            <img src="assets/img/bar.png" alt="">
+            <header class="main-header">
+                <h2 class="main-header-title"><img src="assets/img/NEWS.png" alt="NEWS"></h2>
+               <span class="main-header-subtitle">お知らせ</span>
+            </header>
+            
             <ul class="news-list">
                 <li class="news-item">
                     <a href="">
@@ -100,49 +104,87 @@
         <!-- PLATFORM -->
         <section class="platform-area">
             <div class="wrapper">
-            <h2 class="main-section-title"><img src="assets/img/PLATFORM.png" alt=""></h2>
-            <span class="main-section-subtitle">プラットフォームについて</span>
+            <img src="assets/img/bar.png" alt="">
+            <header class="main-header">
+                <h2 class="main-header-title"><img src="assets/img/PLATFORM.png" alt="PLATFORM"></h2>
+                <span class="main-header-subtitle">プラットフォームについて</span>
+            </header>
             <p class="platform-text">BAUSではクリエイティブプラットフォームとして、クリエイターとユニットをつなぐための機会が大きく3つあります。<br>
             すべてのコンテンツはユニット（企業・団体）・クリエイター（個人）に関わらず掲載・応募いただけます。</p>
-            <div class="user-type">
-                <ul class="user-type-list">
-                    <li class="user-type-item">
-                        <img src="assets/img/illust_creator.png" alt="">
-                        <p class="user-type-item-title">クリエイター</p>
-                    </li>
-                    <li class="user-type-item">
-                        <img src="assets/img/illust_unit.png" alt="">
-                        <p class="user-type-item-title">ユニット</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="opportunity">
-                <section class="make-team">
-                    <h3 class="opportunity-title"><img src="assets/img/MAKE TEAM.png" alt=""></h3>
-                    <p class="opportunity-text">MAKE TEAMはオープンイノベーションにも最適です。</p>
-                    <div class="opportunity-detail">
-                        <h4 class="opportunity-detail-title">プロジェクトを一緒に作り上げるチームスタッフを探す</h4>
-                        <p class="opportunity-detail-text">制作するプロジェクトに対して必要なスタッフを、役職ごとにピンポイントでスピーディにアサインすることができます。急ぎのプロジェクトから、自主制作、専門性を求める仕事など多種多様なプロジェクトご利用頂けます。</p>
-                    </div>
-                </section>
-                <section class="recruit">
-                        <h3 class="opportunity-title"><img src="assets/img/RECRUIT.png" alt=""></h3>
-                        <span>掲載・応募</span>
-                        <p class="opportunity-text">顧問契約や師弟関係の構築にもご利用いただけます。</p>
+
+            <div class="platform-wrapper">
+                <div class="user-type">
+                    <ul class="user-type-list">
+                        <li class="user-type-item">
+                            <p class="user-type-item-title">ユーザータイプ</p>
+                            <figure class="user-type-item-img">
+                                <img src="assets/img/illust_creator.png" alt="">
+                                <figcaption class="user-type-item-caption">クリエイター</figcaption>
+                            </figure>
+                        </li>
+                        <li class="user-type-item">
+                            <figure>
+                                <img src="assets/img/illust_unit.png" alt="">
+                                <figcaption class="user-type-item-caption">ユニット</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="opportunity-area">
+                    <section class="opportunity">
+                        <div class="opportunity-wrapper">
+                            <div class="opportunity-title-wrapper">
+                                <h3 class="opportunity-title"><img src="assets/img/MAKETEAM.png" alt="MAKE TEAM"></h3>
+                                <figure class="opportunity-subtitle">
+                                    <figcaption>掲載・応募</figcaption>
+                                    <img src="assets/img/illust_creator_unit.png" alt="">
+                                </figure>
+                            </div>
+                            <p class="opportunity-text">MAKE TEAMはオープンイノベーションにも最適です。</p>
+                        </div>
+                        <div class="opportunity-detail">
+                            <h4 class="opportunity-detail-title">プロジェクトを一緒に作り上げるチームスタッフを探す</h4>
+                            <p class="opportunity-detail-text">制作するプロジェクトに対して必要なスタッフを、役職ごとにピンポイントでスピーディにアサインすることができます。急ぎのプロジェクトから、自主制作、専門性を求める仕事など多種多様なプロジェクトご利用頂けます。</p>
+                        </div>
+                    </section>
+
+                    <section class="opportunity">
+                        <div class="opportunity-wrapper">
+                            <div class="opportunity-title-wrapper">
+                                <h3 class="opportunity-title"><img src="assets/img/RECRUIT.png" alt="RECRUIT"></h3>
+                                <figure class="opportunity-subtitle"> 
+                                    <figcaption>掲載・応募</figcaption>
+                                    <img src="assets/img/illust_creator_unit.png" alt="">
+                                </figure>
+                            </div>
+                            <p class="opportunity-text">顧問契約や師弟関係の構築にもご利用いただけます。</p>
+                        </div>
                         <div class="opportunity-detail">
                             <h4 class="opportunity-detail-title">長く共に働くメンバーを探す</h4>
                             <p class="opportunity-detail-text">ユニット(団体・企業)が、メンバー(社員)として長期的に制作活動を共にし、仕事や作品を作ってくれる人材と出会うきっかけづくりを提供する場です。</p>
                         </div>
-                </section>
-                <section class="magazine">
-                        <h3 class="opportunity-title"><img src="assets/img/MAGAZINE.png" alt=""></h3>
-                        <span>閲覧</span>
-                        <p class="opportunity-text">クリエイティブ情報だけでなくイベント情報も掲載します。</p>
+                    </section>
+
+                    <section class="opportunity">
+                        <div class="opportunity-wrapper">
+                            <div class="opportunity-title-wrapper">
+                                <h3 class="opportunity-title"><img src="assets/img/MAGAZINE.png" alt="MAGAZINE"></h3>
+                                <figure class="opportunity-subtitle">
+                                    <figcaption>閲覧</figcaption>
+                                    <img src="assets/img/illust_creator_unit.png" alt="">
+                                </figure>
+                            </div>
+                            <p class="opportunity-text">クリエイティブ情報だけでなくイベント情報も掲載します。</p>
+                        </div>
                         <div class="opportunity-detail">
                             <p class="opportunity-detail-text">MAKE TEAMで行われたプロジェクトや、今注目のユニット、イベントや業界のニュースなど、気になるトピックを取り上げて掲載をしていきます。</p>
                         </div>
-                </section>
+                    </section>
+
+                </div>
             </div>
+
             <a href="" class="platform-button">お問い合わせ<img src="assets/img/icon_mail.png" alt="メールアイコン"></a>
             </div>
         </section>
@@ -150,18 +192,22 @@
         <!-- BAUS TEAM -->
         <section class="baus-team-area">
             <div class="wrapper">
-            <h2 class="main-section-title"><img src="assets/img/BAUSTEAM.png" alt=""></h2>
-            <span class="main-section-subtitle">運営について</span>
+            <img src="assets/img/bar.png" alt="">
+            <header class="main-header">
+                <h2 class="main-header-title"><img src="assets/img/BAUSTEAM.png" alt="BAUS TEAM"></h2>
+                <span class="main-header-subtitle">運営について</span>
+            </header>
             <p class="baus-team-text">私たちが作りたいのは、ただの就職サイトでもWEBマガジンでもクラウドソーシングサービスでもありません。<br>
             　クリエイティブと社会の関係性において、関わる全ての人々にとって｢次｣と｢続き｣を作る、そんなプラットフォームをBAUSは目指しています。<br>
             　｢次｣とは、例えば、次世代を担うようなクリエイターや、アーティストや、カルチャーを作るということ。｢続き｣とは、今ある団体・企業の｢続き｣のストーリーを描いていくことです。そして、BAUSはそのような「機会」を作って、社会においてクリエイティブの価値を高めていきます。<br>
             　クリエイティブに関わる全ての人をサポートし、よりクリエイティブな社会を創ることを目的として、私たちはこのプラットフォームを運営していきます。</p>
             <ul class="baus-team-list">
                 <li class="baus-team-item">
-                    <div class="item-img"><img src="assets/img/pic_team_kato.jpg" alt=""></div>
-                    <div class="item-detail">
-                        <p class="item-name"><span>BAUS発起人</span>加藤 晃央</p>
-                        <p class="item-text">1983年、長野県生まれ。<br> 武蔵野美術大学芸術文化学科卒。<br>
+                    <div class="baus-team-item-img"><img src="assets/img/pic_team_kato.jpg" alt=""></div>
+                    <div class="baus-team-item-detail">
+                        <span class="baus-team-item-title">BAUS発起人</span>
+                        <p class="baus-team-item-name">加藤 晃央</p>
+                        <p class="baus-team-item-text">1983年、長野県生まれ。<br> 武蔵野美術大学芸術文化学科卒。<br>
                         大学3年時、数々の挫折から「脱美大」を図り、独立系ベンチャーキャピタルでインターン。<br>
                         CIVIやブランディングをはじめ、広告制作を請負うことを通して「属美大」を強く感じる。<br>
                         内定を断り、学部4年時に起業し、モーフィングを設立。設立当初の事業テーマは、「美大で培ったものの学外実践」で、商品開発や広告企画制作請負の他、フリーマガジンPARTNERの発行、展覧会THE SIX、美大生に特化した就職メディア「美ナビ」、就職展覧会「美ナビ展」を立ち上げる。ムサビ卒業後、「アートをもっと一般の人に広める」ことを事業テーマとし、美術館のPR業務や教育施設でのワークショップを請け負う。しかし、まだまだ一部の限られた人の間でしか、アートは楽しまれていないことを実 感し、アートを広める場所を「アート寄りな場所」ではなく「一般寄りな場所」に変更。<br>
@@ -178,10 +224,11 @@
                     </div>
                 </li>
                 <li class="baus-team-item">
-                    <div class="item-img"><img src="assets/img/pic_team_iguchi.jpg" alt=""></div>
-                    <div class="item-detail">
-                        <p class="item-name"><span>クリエイティブディレクター</span>井口 皓太</p>
-                        <p class="item-text">1984年横浜出身。<br>
+                    <div class="baus-team-item-img"><img src="assets/img/pic_team_iguchi.jpg" alt="井口 皓太"></div>
+                    <div class="baus-team-item-detail">
+                        <span class="baus-team-item-title">クリエイティブディレクター</span>
+                        <p class="baus-team-item-name">井口 皓太</p>
+                        <p class="baus-team-item-text">1984年横浜出身。<br>
                         武蔵野美術大学基礎デザイン学科卒。<br>
                         大学4年次にデザインスタジオ株式会社ティモテ（TYMOTE）を設立。<br>
                         以後、グラフィックデザイン、映像、音楽、空間演出、WEBと、総合的なデザインを行っている。新宿伊勢丹でのインスタレーションや、NHK太宰治の特別ドラマの制作、書籍『Cut, Paste, Collective』を著者として出版するなど、活動は多岐に渡っている。<br>
@@ -191,10 +238,11 @@
                     </div>
                 </li>
                 <li class="baus-team-item">
-                    <div class="item-img"><img src="assets/img/pic_team_mophing.jpg" alt=""></div>
-                    <div class="item-detail">
-                        <p class="item-name"><span>運営主催</span>株式会社モーフィング</p>
-                        <p class="item-text">〒185-0021 東京都国分寺市南町 3-22-31 島崎ビル 3F<br>
+                    <div class="baus-team-item-img"><img src="assets/img/pic_team_mophing.jpg" alt="株式会社モーフィングロゴ"></div>
+                    <div class="baus-team-item-detail">
+                        <span class="baus-team-item-title">運営主催</span>
+                        <p class="baus-team-item-name">株式会社モーフィング</p>
+                        <p class="baus-team-item-text">〒185-0021 東京都国分寺市南町 3-22-31 島崎ビル 3F<br>
                         Tel: 042-300-2370<br>
                         Fax: 042-300-2371<br>
                         メールアドレス : info@m-inc.jp <br>
@@ -208,8 +256,11 @@
         <!-- OFFICIAL PARTNER -->
         <section class="official-partner-area">
             <div class="wrapper">
-            <h2 class="main-section-title">OFFICIAL PARTNER</h2>
-            <span class="main-section-subtitle">支援団体</span>
+            <img src="assets/img/bar.png" alt="">
+            <header class="main-header">
+                <h2 class="main-header-title"><img src="assets/img/OFFICIALPARTNER.png" alt="OFFICIAL PARTNER"></h2>
+                <span class="main-header-subtitle">支援団体</span>
+            </header>
             <ul class="partner-list">
                 <li class="pertner-item"><img src="assets/img/pic_supporter_cekai.png" alt=""></li>
                 <li class="pertner-item"><img src="assets/img/pic_supporter_epoch.png" alt=""></li>
@@ -221,6 +272,10 @@
     </main>
 
     <!-- フッター -->
-    <footer><small>Copyright &copy;2017 BAUS</small></footer>
+    <footer class="footer">
+        <div class="wrapper">
+            <img src="assets/img/Copyright.png" alt="">
+        </div>
+    </footer>
 </body>
 </html>
