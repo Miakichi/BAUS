@@ -435,6 +435,8 @@ main {
   -webkit-transform: translate(-5px, -5px);
   -ms-transform: translate(-5px, -5px);
   transform: translate(-5px, -5px);
+  -webkit-box-shadow: 10px 10px 0 #b34f36;
+  box-shadow: 10px 10px 0 #b34f36;
 }
 
 .footer {
