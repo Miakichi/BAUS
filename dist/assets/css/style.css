@@ -71,6 +71,10 @@ main {
   margin: 0 auto 35px;
 }
 
+.grobal-header .play-movie-button:hover {
+  background-color: #333;
+}
+
 .grobal-header .scroll-button {
   display: block;
   width: 50px;
@@ -146,8 +150,14 @@ main {
   padding: 23px 0;
   font-size: 16px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  background-color: #b34f36;
+  font-weight: bold;
+  color: #ffffff;
   border-style: none;
+  background: #b34f36 url(../img/icon_register.png) no-repeat right 17px center;
+}
+
+.pre-registration-area .pre-registration-form input[type=submit]:hover {
+  background-color: #ce5b3e;
 }
 
 .news-area {
@@ -162,6 +172,7 @@ main {
 
 .news-area .news-list .news-item {
   border-bottom: 1px solid #f4f4f4;
+  position: relative;
 }
 
 .news-area .news-list .news-item a {
@@ -174,6 +185,27 @@ main {
   width: 100%;
   padding: 40px 58px;
   text-decoration: none;
+}
+
+.news-area .news-list .news-item a::after {
+  background: transparent;
+  border-right: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  margin-top: -6px;
+  right: 23px;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.news-area .news-list .news-item a:hover {
+  background-color: #fafafa;
 }
 
 .news-area .news-list .news-item .news-img {
@@ -326,7 +358,6 @@ main {
 .platform-area .platform-button {
   display: block;
   width: 560px;
-  background-color: #111;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -335,6 +366,11 @@ main {
   font-size: 16px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   margin: 40px auto 0;
+  background: #111 url(../img/icon_mail.png) no-repeat right 17px center;
+}
+
+.platform-area .platform-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .baus-team-area {
@@ -386,6 +422,19 @@ main {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 80px;
+}
+
+.official-partner-area .partner-list .pertner-item {
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 1;
+}
+
+.official-partner-area .partner-list .pertner-item:hover {
+  -webkit-transform: translate(-5px, -5px);
+  -ms-transform: translate(-5px, -5px);
+  transform: translate(-5px, -5px);
 }
 
 .footer {
